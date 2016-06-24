@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Udemy Sign Up Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+	    <nav>
+	    	<div id="container">
+		        <ul>
+		            <li><a href="#">Home</a></li>
+		            <li><a href="#">About</a></li>
+		            <li><a href="#" class="active">Sign Up</a></li>
+		        </ul>
+		    </div>		    
+	    </nav>    
+		<form id="search">
+			<input type="search" name="searchbox" value="" placeholder="Search our site">	
+			<input type="submit" name="searchbtn" value="Search">
+		</form>		
+	</header>	
+	
+	<section>
+		<form id="create">
+			<fieldset id="basics">
+				<legend>Basic Info</legend>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="John Doe" required autofocus />
+
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required />
+
+				<label for="age">Age</label>
+				<input type="number" name="age" id="age" min="1" max="130" value="1" required/>
+			</fieldset>
+
+			<fieldset id="options">
+				<legend>Optional Info</legend>
+				<label class="grplabel">Gender</label>
+				<label><input type="radio" name="gender" value="m" />Male</label>
+				<label><input type="radio" name="gender" value="f" />Female</label>
+
+
+				<label class="grplabel">Signups</label>
+				<div>
+					<label><input type="checkbox" name="signups" value="d" />Daily Updates</label>
+					<label><input type="checkbox" name="signups" value="w" />Weekly Updates</label>
+					<label><input type="checkbox" name="signups" value="m" />Monthly Updates</label>
+				</div>
+			</fieldset>
+
+			<input type="submit" value="Create my New Profile" />
+		</form>	
+	</section>		
+</body>
+</html>

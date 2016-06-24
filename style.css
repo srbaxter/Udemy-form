@@ -1,0 +1,154 @@
+body {
+	width: 100%;
+	background-color: #f2f5f7;
+}
+
+input:focus {
+	outline: none;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: black;
+   height: 70px;
+   width: 100%;
+}
+
+nav li {
+	float: left;
+}
+
+nav ul {
+	list-style-type: none;	
+} 
+
+nav li a {
+	padding: 22px 10px 22px 10px;
+	margin-top: -12px;
+	display: block;
+   text-decoration: none;
+   color: white;
+   font-size: 1.2em;    
+}
+
+nav li a:hover {
+   background: gray;
+}
+
+nav a.active {  
+   pointer-events: none;
+   background-color: #5cb4f2;
+	color: black;
+	font-weight: bold;
+}
+
+form#search input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-border-radius: 60px 0 0 60px;
+	-moz-border-radius: 60px 0 0 60px;
+	border-radius: 60px 0 0 60px;
+	border: 1px solid #ccc;
+	height: 3em;
+	padding-left: 20px;
+	position: absolute;
+	right: 6.0em;
+	top: 1em;
+	width: 250px;
+	font-weight: bold;
+}
+
+form#search input[type="submit"] {
+	height: 3em;
+	background-color: #5cb4f2;
+	border: 1px solid #ccc;
+	border-style: none;
+	cursor: pointer;
+	-webkit-border-radius: 0 60px 60px 0;
+	-moz-border-radius: 0 60px 60px 0;
+	border-radius: 0 60px 60px 0;
+	padding-right: 10px;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	width: 70px;
+	font-weight: bold;
+}
+
+#create {
+	width: 50%;
+	margin: 120px auto;
+}
+
+fieldset {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: 2px solid;
+}
+
+legend {
+	text-align: right;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#create #basics input {
+	width: 200px;
+	display: block;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 10px;
+}
+
+/*
+input:required:invalid, input:focus:invalid {
+   insert your own styles for invalid form input 
+  -moz-box-shadow: none;
+	border: 2px solid red;
+}
+input:required:valid {
+    border: 2px solid green;
+}
+*/
+
+#name {
+	font-size: 1em;
+}
+
+#basics label, #options .grplabel {
+	width: 100px;
+	text-align: right;
+	float: left;
+	clear: left;
+	margin: 0 15px 20px 0;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+#options div {
+	width: 250px;
+	float: left;
+}
+
+#options div label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#create input[type="submit"] {
+	padding: 5px 20px;
+	height: 3em;
+	text-align: center;
+	background-color: #5cb4f2;
+	cursor: pointer;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float: right;
+	border-style: none;
+	margin-top: -0.5em;
+	font-weight: bold;
+	font-size: 1.1em;
+}
